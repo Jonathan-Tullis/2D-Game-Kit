@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bpmkh66d6od8n"]
+
+[sub_resource type="Gradient" id="Gradient_kfupu"]
+colors = PackedColorArray(0.8921468, 0.9176569, 0.36267194, 1, 1, 1, 0.17254902, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7vndn"]
+gradient = SubResource("Gradient_kfupu")
+
+[node name="Area2D" type="Area2D" unique_id=1690706375]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1207388872]
+position = Vector2(621, 306)
+texture = SubResource("GradientTexture2D_7vndn")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1265645807]
+position = Vector2(621, 306)
+polygon = PackedVector2Array(-32, -32, -32, 32, 32, 32, 32, -32)
